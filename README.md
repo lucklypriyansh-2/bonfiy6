@@ -1,3 +1,8 @@
+# Tech stack used
+      rx java
+      http client
+      spring web
+      
 # bonfiy6
 
 STEPS TO RUN
