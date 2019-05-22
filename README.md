@@ -37,8 +37,8 @@ While reciving data it ised compute scheduler  thread for converting the data in
       Return Type for the Request is Observable<String> which is rxjava object and is asynchornus in nature
 
 # Features checklist
-a. Connections, pipelines, pooling & persistency //Implemented using  http clients of apache commons also it supports connection polling
-b.Mutiple instance can be run at same time and it provides client side load balancing it provides client side load balancing by getting list of endpoints and randomly selecting one of them in case of failover it retry for 3 time and then randomly selects another once 
-c. Circut breaker pattern is not implemented and could be implementing using hystrix.In case of failover from one ip it should call another ip and break circuit from one ip
-d.provides request filtering  by providing filtername and filter patttern two type of filter are provided AuthFilter,DataFilter .Auth filter  takes filter value and can provide authentication check by calling IAM or JWT (feature not IMPLEMENTED). Data filter takes regex pattern and allow only that data to be passed  
-e .error handling is done using error code and throwing runtime exception from every possible place
+      a. Connections, pipelines, pooling & persistency //Implemented using  http clients of apache commons also it supports connection polling
+      b.Mutiple instance can be run at same time and it provides client side load balancing it provides client side load balancing by getting list of endpoints and randomly selecting one of them in case of failover it retry for 3 time and then randomly selects another once 
+      c. Circut breaker pattern is not implemented and could be implementing using hystrix.In case of failover from one ip it should call another ip and break circuit from one ip
+      d.provides request filtering  by providing filtername and filter patttern two type of filter are provided AuthFilter,DataFilter .Auth filter  takes filter value and can provide authentication check by calling IAM or JWT (feature not IMPLEMENTED). Data filter takes regex pattern and allow only that data to be passed  
+      e .error handling is done using error code and throwing runtime exception from every possible place
